@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Square Library Berhampur</h1>
+<p>Librarian: Satya Sir</p>
+<p class="dev">Software Developer: Rajeswar Behera</p>
+<button onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+
+<h2>Add Book</h2>
+
+<input id="bookName" placeholder="Book Name">
+<input id="authorName" placeholder="Author">
+<input id="category" placeholder="Category">
+
+<button onclick="addBook()">Add Book</button>
+
+<h2>Search Book</h2>
+
+<input id="search" placeholder="Search Book" onkeyup="searchBook()">
+
+<h2>Books List</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Book</th>
+<th>Author</th>
+<th>Category</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="bookList"></tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
